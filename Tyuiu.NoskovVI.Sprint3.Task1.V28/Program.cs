@@ -1,18 +1,18 @@
-﻿using Tyuiu.NoskovVI.Sprint3.Task0.V28.Lib;
-namespace Tyuiu.NoskovVI.Sprint3.Task0.V28
+﻿using Tyuiu.NoskovVI.Sprint3.Task1.V28.Lib;
+namespace Tyuiu.NoskovVI.Sprint3.Task1.V28
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             int startValue, endValue;
-            double x;
+            double a;
             DataService ds = new DataService();
             Console.Title = "Спринт #3 | Выполнил: Носков В. И. | ПКТб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Тема: Оператор цикла while                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
             Console.WriteLine("* Вариант #28                                                             *");
             Console.WriteLine("* Выполнил: Носков Виталий Игоревич | ПКТб-24-1                           *");
             Console.WriteLine("***************************************************************************");
@@ -24,21 +24,22 @@ namespace Tyuiu.NoskovVI.Sprint3.Task0.V28
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите начало ряда: ");
+            Console.WriteLine("Введите значение а: ");
+            a = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine();
+            Console.WriteLine("Введите начало серии: ");
             startValue = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine();
-            Console.WriteLine("Введите конец ряда: ");
+            Console.WriteLine("Введите конец серии: ");
             endValue = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Введите X: ");
-            x = Convert.ToDouble(Console.ReadLine());
-
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.GetMultiplySeries(x,startValue,endValue));
+            Console.WriteLine(ds.GetSumSeries(a, startValue, endValue));
+
 
         }
     }
