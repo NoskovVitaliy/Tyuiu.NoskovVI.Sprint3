@@ -1,10 +1,24 @@
-﻿namespace test
+﻿    namespace test
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(16382.2947922834935129487805815 * 3);
+            int x;
+            int sum = 0, sumd = 0;
+            int count1 = 0;
+            for (x = 2; x<= 5; x++)
+            {
+                for (int d = 1; d<=x; d++)
+                {
+                    if (x%d == 0)
+                    {
+                        count1++;
+
+                    }
+                }
+            }
+            Console.WriteLine(count1);
         }
     }
 }
