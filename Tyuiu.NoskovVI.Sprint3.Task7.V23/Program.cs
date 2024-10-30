@@ -29,7 +29,7 @@ namespace Tyuiu.NoskovVI.Sprint3.Task7.V23
             end = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                        *");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
             double[] valueArray = ds.GetMassFunction(start, end);
