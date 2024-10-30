@@ -10,7 +10,7 @@ namespace Tyuiu.NoskovVI.Sprint3.Task4.V11.Test
             DataService ds = new DataService();
             int start = -5;
             int end = 5;
-            double wait = 0.526;
+            double wait = 0.84;
             Assert.AreEqual(wait, ds.Calculate(start, end));
         }
     }

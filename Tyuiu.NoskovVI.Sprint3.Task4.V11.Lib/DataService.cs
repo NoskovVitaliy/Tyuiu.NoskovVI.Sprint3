@@ -10,7 +10,7 @@ namespace Tyuiu.NoskovVI.Sprint3.Task4.V11.Lib
             for (int x = startValue;  x <= stopValue; x++)
             {
                 if (x == 0) continue;
-                multiplication *= ((double)x) / ((Math.Sin((double)x) - (double)x) + 2d);
+                multiplication *= ((x) / (Math.Sin(x) - x)) + 2;
             }
             return Math.Round(multiplication, 3);
         }
